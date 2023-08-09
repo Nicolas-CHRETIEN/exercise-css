@@ -1,22 +1,10 @@
-# A CSS exercise: reproduce a website:
-
- As I began coding, I first learn HTML, CSS and JavaScript.
- This is an exercise I did to learn CSS.
-
- Main goals:
-
-   - Learn how to construct the HTML to have a nice responsive finish
-   - Understand CSS flexbox layout
-   - Construct full responsive pages with media queries
-   - Create some animations and transitions
-
-
 
 ## responsive pages:
 
 To get a responsive design, I started from the narrowest screen:
 
-![home-responsive](https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/ca27e2a3-1495-46ef-af69-dd954a5efc8e)
+![home-responsive](https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/12940705-7bf0-4432-90f5-b5e3dce8ec2d)
+
 
 To make it look nice I divided the HTML in many elements and I set CSS container's style with a flex display. Then I reduced width of all elements inside.
 I created a burger menu on the navbar save some place and I modified the carrousel to show only 1 image at a time.
@@ -26,7 +14,8 @@ I created a burger menu on the navbar save some place and I modified the carrous
 
 The more screen width increase, the more changes are made with media queries:
 
-![home-responsive-2](https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/af8a549f-e527-48f2-a0b9-5c280493a7f4)
+![home-responsive-2](https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/72654c51-30a6-4483-ae56-58596038dc6b)
+
 
 Here there are now two images showed at a time on the carousel. 
 The navbar doesn't have burger menu, all links are visible.
@@ -36,7 +25,8 @@ The div are now placed side by side.
 
 If the screen width is even more important you obtain this result:
 
-![home](https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/3d6c07ae-33b0-4d5f-80fb-d5695169eb77)
+![home](https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/8513287f-9da7-4050-9ad8-c5d92984709a)
+
 
 Four images at a time are visible in the carousel and the main width is reduced.
 
@@ -48,7 +38,11 @@ To train myself I created some animations and transitions.
 
 
 
-https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/09e0a976-5a7f-4a3a-9b9d-877c396abd78
+
+
+https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/b81c4917-b285-4fcd-b6f5-ee2204ada6cc
+
+
 
 
 
