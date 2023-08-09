@@ -1,0 +1,454 @@
+/*----------------------- Generalities -----------------------------*/
+
+.margin{
+    margin-left: 1.5em;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: rgb(235, 185, 125);
+}
+a:hover{
+    color: rgb(255, 244, 36);
+}
+a:visited{
+    color: rgb(12, 163, 143);
+}
+a:active{
+    color: rgb(19, 246, 216);
+}
+
+body{
+    font-size: 80%;
+    margin: 0%;
+}
+.main{
+background-color: rgba(122, 150, 151, 0.788);
+margin: 0%;
+padding: 0%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+font-size: 100%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/*----------------------------- Header -----------------------------*/
+
+.header{
+    background-color: rgb(51, 51, 51);
+    color: rgb(232, 232, 232);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: rgb(235, 185, 125);
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+}
+.header img{
+    width: 30%;
+}
+.header>h3 span{
+    color:rgb(217, 190, 157) ;
+}
+.header>h3{
+    padding-left: 1.5em;
+    color: rgb(235, 185, 125);
+    border-bottom: 1px solid rgb(217, 190, 157) ;
+    font-weight: bolder;
+    font-size: larger;
+}
+.header>ul{
+    position: absolute;
+    top: 1000%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    font-size: 130%;
+}
+.header>ul li{
+    padding: 3%;
+}
+
+/*----------------------------- Burger menu. -----------------------------*/
+
+.burger{
+    width: 12%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.burger-part{
+    width: 80%;
+    height: 0.4em;
+    background-color: rgb(235, 185, 125);
+    transition: 0.5s all 0s ease;
+}
+.burger-opened .top-bun{
+    transform: rotate(45deg) translate(0%, 240%);
+}
+.burger-opened .meat{
+    transform: rotatey(0.25turn);
+}
+.burger-opened .bottom-bun{
+    transform: rotate(-45deg) translate(0%, -240%);
+}
+.burger-list-div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    height: 11%;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s transform 0s ease, 0s z-index 0s step-end;
+}
+.burger-opened{
+    position: relative;
+}
+.burger-closed{
+    transform: scale(0);
+    z-index: -1;
+}  
+.close-burger:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+.burger-list{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    width: 80%;
+    height: 100%;
+    font-size: 150%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+.burger-open .burger-top-bun{
+transform: rotate(0.125turn);
+position: absolute;
+}
+.burger-open .burger-meat{
+background-color: rgba(0, 0, 0, 0);
+}
+.burger-open .burger-bottom-bun{
+    transform: rotate(-0.125turn);
+    position: absolute;
+}
+.burger:hover{
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+/*----------------------------- Menu -----------------------------*/
+
+.image-box{
+    width: 100%;
+    margin: 2% 0%;
+}
+.image1{
+    height: 100%;
+    width: 100%;
+}
+.product{
+    background-color: rgba(49, 49, 49, 0.479);
+    width: 55%;
+    margin: 2% 0%;
+}
+
+/*----------------------------- Product -----------------------------*/
+
+.product{
+    display: flex;
+    width: 100%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.buy{
+    width: 20%;
+    background-color: rgb(224, 146, 50);
+    font-size: 130%;
+    border-radius: 20px;
+    border: 5px solid rgb(224, 146, 50);
+    align-self: center;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+.buy:hover{
+    border: 5px solid rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+/*--------------------------- galery ---------------------------*/
+
+/*----------- Carousel -----------*/
+
+.carousel {
+    display: flex;
+    margin: 2% 0%;
+    height: 45vh;
+    width: 95%;
+    overflow: hidden;
+}
+.carousel-ribbon {
+    display: flex;
+    position: relative;
+    left: 3%;
+    flex: 0 0 1200%;
+    animation: carousel 22s ease 0s infinite;
+}
+.carousel-ribbon:hover{
+    animation-play-state: paused;
+}
+.button1 {
+    position: absolute;
+    width: 12vw;
+    height: 8vh;
+    top: 134vh;
+    opacity: 0.3;
+    border-radius: 9px;
+    z-index: 2;
+}
+.button-left {
+    left: 7vw;
+}
+.button-right {
+    left: 82vw;
+}
+.button2 {
+    position: absolute;
+    width: 6vw;
+    height: 4vh;
+    top: 153vh;
+    opacity: 0.4;
+    border-radius: 100%;
+    z-index: 2;
+}
+.button-point1 {
+    left: 39vw;
+}
+.button-point2 {
+    left: 49vw;
+}
+.button-point3 {
+    left: 59vw;
+}
+.button1:hover,
+.button2:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    opacity: 0.5;
+}
+
+/* The animation is devides into 12 parts for each picture. */
+
+@keyframes carousel {
+    0%{transform: translate(0%);}
+    8%{transform: translate(-8.33%);}
+    8.33%{transform: translate(-8.33%);}
+    16.33%{transform: translate(-16.66%);}
+    16.66%{transform: translate(-16.66%);}
+    24.77%{transform: translate(-25%);}
+    25%{transform: translate(-25%);}
+    33%{transform: translate(-33.33%);}
+    33.33%{transform: translate(-33.33%);}
+    41.33%{transform: translate(-41.66%);}
+    41.66%{transform: translate(-41.66%);}
+    49.77%{transform: translate(-50%);}
+    50%{transform: translate(-50%);}
+    58%{transform: translate(-58.33%);}
+    58.33%{transform: translate(-58.33%);}
+    66.33%{transform: translate(-66.66%);}
+    66.66%{transform: translate(-66.66%);}
+    74.77%{transform: translate(-75%);}
+    75%{transform: translate(-75%);}
+    83%{transform: translate(-83.33%);}
+    83.33%{transform: translate(-83.33%);}
+    91.33%{transform: translate(-91.66%);}
+    91.66%{transform: translate(-91.66%);}
+    99.77%{transform: translate(0%);}
+    100%{transform: translate(0%);}
+}
+
+/*----------- Images -----------*/
+
+.images-section{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+.figure{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5em;
+    border: 5px solid rgba(122, 150, 151, 0.788);
+    transition: 1s all 0s ease;
+    margin: 0.2em;
+}
+.images{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s all 0s ease-in;
+}
+.figcaption{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: rgb(246, 246, 246);
+    background-color: rgba(36, 36, 36, 0.188);
+    transition: 0.1s transform 0s ease-in, 0.5s background-color 0s ease-in, 0.1s z-index 0s ease-in;
+}
+.figure:hover{
+    cursor: pointer;
+}
+.figure:hover .images{
+    opacity: 40%;
+    transform: scale(105%);
+    z-index: 5;
+}
+.figure:hover .figcaption{
+    transform: scale(105%);
+    background-color: rgb(36, 36, 36);
+    z-index: 4;
+}
+
+/*----------------------------- Footer -----------------------------*/
+
+.footer{
+    background-color: rgb(51, 51, 51);
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.share{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+color: rgb(248, 169, 73);
+min-width: 40%;
+}
+.share a{
+    margin-left: 10%;
+    font-size: 130%;
+}
+.share a:hover{
+    scale: 130%;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer>p{
+    margin: 2em 0em;
+    color: rgb(248, 169, 73);
+    margin-left: 0.5%;
+    font-size: 80%;
+}
+.window-section{
+    width: 100%;
+}
+.window{
+    height: 72px;
+    width: 72px;
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    left: 1000%;
+    transition: 0.5s width 0s ease-in;
+}
+.close{
+    position: absolute;
+    font-size: 150%;
+    font-weight: bolder;
+    top: 0em;
+    right: 0em;
+    background-color: rgba(240, 248, 255, 0);
+    border-color: rgba(240, 248, 255, 0);
+}
+.close:hover{
+    transform: scale(130%);
+    cursor: pointer;
+}
+.open{
+    z-index: 5;
+    left: 0%;
+    position: relative;
+    width: 100%;
+}
+.window img{
+    height: 90%;
+    width: 10%;
+    margin: 1px;
+}
+.window img:hover{
+    scale: 110%;
+    cursor: pointer;
+}
+
+/* The rule animation define the properties the animation gona have. It doesn't work well in short hand notation. */
+.social-network{
+    height: 60px;
+    width: 60px;
+    background-image: url(../images/facebook.png);
+    animation-name: chgt-image;
+    animation-duration: 15s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+/* The animation rule MUST always be followed by @keyframes to describe the effect we want in the animation. */
+@keyframes chgt-image{
+    11%{background-image: url(../images/instagram.png);}
+    22%{background-image: url(../images/appli2.png);}
+    33%{background-image: url(../images/snapchat.png);}
+    44%{background-image: url(../images/twiter.png);}
+    55%{background-image: url(../images/whatsap.png);}
+    66%{background-image: url(../images/youtube.png);}
+    77%{background-image: url(../images/pinterest.png);}
+    88%{background-image: url(../images/appli1.png);}
+    99%{ backgrou-image: url(../images/facebook.png);}
+}

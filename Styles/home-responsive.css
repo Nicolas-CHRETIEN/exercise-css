@@ -1,0 +1,117 @@
+/*----------------------------- More than 600 px -----------------------------*/
+
+@media screen and (min-width: 600px){
+    .main{
+    justify-content: space-around;
+    margin: 0%;
+    padding: 0%;
+    }
+    .header>ul{
+        position: relative;
+        top: 0%;
+    }
+    .burger{
+        position: absolute;
+        top: 1000%;
+    }
+    .aside{
+        width: 35%;
+    }
+    .aside .image1{
+        width: 40%;
+    }
+    .section{
+        width: 59%;
+    }
+    .share{
+        min-width: 25%;
+    }
+    .footer>p{
+        font-size: 110%;
+    }
+}
+/* Reduce the carousel ribbon at half to show 2 pictures at a time */
+@media screen and (min-width: 600px) and (max-width: 799px){
+    .carousel{
+        height: 30vh;
+    }
+    .carousel-ribbon{
+        flex: 0 0 600%;
+    }
+}
+
+/*----------------------------- 800px until 999px -----------------------------*/
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    .body{
+        background-image: url(../images/b1.jpg) ;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 200%;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        width: 90%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .carousel{
+    height: 30vh;
+    }
+    .carousel-ribbon{
+        flex: 0 0 600%;
+    }
+}
+
+/*----------------------------- 1000px until 1199px -----------------------------*/
+
+@media screen and (min-width: 1000px) and (max-width: 1199px){
+    .body{
+        background-image: url(../images/b1.jpg) ;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 200%;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        width: 80%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .carousel{
+    height: 25vh;
+    }
+    /* Reduce the carousel ribbon at a quarter to show 4 pictures at a time */
+    .carousel-ribbon{
+        flex: 0 0 300%;
+    }
+}
+
+/*----------------------------- more than 1199px -----------------------------*/
+
+@media screen and (min-width: 1200px){
+    .body{
+        background-image: url(../images/b1.jpg) ;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 200%;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        width: 70%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .carousel{
+    height: 30vh;
+    }
+    .carousel-ribbon{
+        flex: 0 0 300%;
+    }
+}

@@ -1,0 +1,99 @@
+/*----------------------------- More than 600 px -----------------------------*/
+
+@media screen and (min-width: 600px){
+    .main{
+    justify-content: space-around;
+    margin: 0%;
+    padding: 0%;
+    }
+    .menu{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .burger{
+        position: absolute;
+        top: 1000%;
+    }
+    .header>ul{
+        position: relative;
+        top: 0%;
+    }
+    .coordinates{
+        width: 32%;
+        margin: 2% 0%;
+    }
+    .contact{
+        width: 60%;
+        margin: 2% 0%;
+    }
+    .map{
+        width: 95%;
+        margin: 2% 0%;
+    }
+    .share{
+        min-width: 25%;
+    }
+    .footer>p{
+        font-size: 110%;
+    }
+}
+
+/*----------------------------- 800px to 999px -----------------------------*/
+
+@media screen and (min-width: 800px) and (max-width: 999px){
+    .body{
+        background-image: url(../images/b1.jpg) ;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 200%;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        width: 90%;
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+/*----------------------------- 1000px to 1199px -----------------------------*/
+
+@media screen and (min-width: 1000px) and (max-width: 1199px){
+    .body{
+        background-image: url(../images/b1.jpg) ;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 200%;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        width: 80%;
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+/*----------------------------- More than 1199px -----------------------------*/
+
+@media screen and (min-width: 1200px){
+    .body{
+        background-image: url(../images/b1.jpg) ;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 200%;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        width: 70%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+}

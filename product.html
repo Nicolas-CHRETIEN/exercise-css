@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projet mon site page produit</title>
+        <link rel="stylesheet" href="styles/product.css">
+        <link rel="stylesheet" href="styles/product-responsive.css">
+    </head>
+
+    <body class="body">
+        <main class="main">
+            <header class="header">
+                <img src="images/logo.PNG" alt="logo">
+                <div class="titre">
+                    <h1>Ma page produit</h1>
+                </div>
+                <ul class="liste">
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="product.html">produit</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <span class="top-bun burger-part"></span>
+                    <span class="meat burger-part"></span>
+                    <span class="bottom-bun burger-part"></span>
+                </div>
+            </header>
+            <div class="burger-list-div burger-closed">
+                <ul class="burger-list">
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="product.html">produit</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <section class="menu">
+                <div class="image-box">
+                    <img class="image1" data-index="1" src="images/2.jpg" alt="image">
+                </div>
+                <div class="product">
+                    <div class="description">
+                        <h3 class="product-name margin">produit 1</h3>
+                        <p class="product-description margin">Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent, tamen saepe labefactari, si in honoris contentionem incidissent; pestem enim nullam maiorem esse amicitiis quam in plerisque pecuniae cupiditatem, in optimis quibusque honoris certamen et gloriae; ex quo inimicitias maximas saepe inter amicissimos exstitisse.</p>
+                        <ul class="product-avantages margin">
+                            <li>avantage1</li>
+                            <li>avantage2</li>
+                            <li>avantage3</li>
+                            <li>avantage4</li>
+                            <li>avantage5</li>
+                        </ul>
+                        <button class="buy margin" onclick="alert('Nous sommes désolé, ce produit est actuelement en rupture de stock.')">Acheter</button>
+                    </div>
+                </div>
+            </section>
+            <section class="carousel">
+                <div class="carousel-ribbon">
+                    <figure class="figure img1">
+                        <figcaption class="figcaption"><h4>produit1</h4></figcaption>
+                        <img src="images/1.jpg" class="images" data-index="0" alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure img2">
+                        <figcaption class="figcaption"><h4>produit2</h4></figcaption>
+                        <img src="images/2.jpg" class="images" data-index="1"  alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure img3">
+                        <figcaption class="figcaption"><h4>produit3</h4></figcaption>
+                        <img src="images/3.jpg" class="images" data-index="2"  alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit4</h4></figcaption>
+                        <img src="images/4.jpg" class="images" data-index="3"  alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit5</h4></figcaption>
+                        <img src="images/5.jpg" class="images" data-index="4" alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit6</h4></figcaption>
+                        <img src="images/6.jpg" class="images" data-index="5"  alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit7</h4></figcaption>
+                        <img src="images/7.jpg" class="images" data-index="6"  alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit8</h4></figcaption>
+                        <img src="images/8.jpg" class="images" data-index="7"  alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit9</h4></figcaption>
+                        <img src="images/9.jpg" class="images" data-index="8" alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit10</h4></figcaption>
+                        <img src="images/10.jpg" class="images" data-index="9"  alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit11</h4></figcaption>
+                        <img src="images/11.jpg" class="images" data-index="10"  alt="image" onclick="change()">
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figcaption"><h4>produit12</h4></figcaption>
+                        <img src="images/12.jpg" class="images" data-index="11"  alt="image" onclick="change()">
+                    </figure>
+                </div>
+            </section>
+            <section class="window-section">
+                <div class="window">
+                    <img src="images/facebookb.png" class="facebook" alt="facebook" onclick="shareFacebook()">
+                    <img src="images/instagramb.png" class="instagram" alt="instagram" onclick="shareInstagram()">
+                    <img src="images/snapchatb.png" class="snapchat" alt="snapchat" onclick="shareSnapchat()">
+                    <img src="images/twiterb.png" class="twiter" alt="twiter" onclick="shareTwiter()">
+                    <img src="images/appli1b.png" class="appli1" alt="appli1">
+                    <img src="images/appli2b.png" class="appli2" alt="appli2">
+                    <img src="images/youtubeb.png" class="youtube" alt="youtube" onclick="shareYoutube()">
+                    <img src="images/pinterestb.png" class="pinterest" alt="pinterest" onclick="sharePinterest()">
+                    <img src="images/whatsapb.png" class="whatsap" alt="whatsap" onclick="shareWhatsap()">
+                    <button class="close" onclick="closeWindow()">X</button>
+                </div>
+            </section>
+            <footer class="footer">
+                <p>Copyright 2023- ma page produit</p>
+                <div class="share">
+                    <div class="social-network"></div>
+                    <a class="share-link" onclick="share()">Partager</a>
+                </div>
+            </footer>
+        </main>
+        <script src = "scripts/product.js"></script>
+        <script src = "scripts/home.js"></script>
+        <script src = "scripts/share.js"></script>
+        <script src = "scripts/burger.js"></script>
+    </body>
+</html>
