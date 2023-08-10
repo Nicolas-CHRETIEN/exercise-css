@@ -40,7 +40,8 @@ To train myself I created some animations and transitions.
 
 
 
-https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/b81c4917-b285-4fcd-b6f5-ee2204ada6cc
+![ezgif com-video-to-gif (1)](https://github.com/Nicolas-CHRETIEN/exercise-css/assets/132827127/57abc30f-35bd-4251-bec9-479c7994856f)
+
 
 
 
